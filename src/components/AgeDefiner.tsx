@@ -1,4 +1,4 @@
-import { Button, Input } from "@vkontakte/vkui";
+import { Button, Input, Text } from "@vkontakte/vkui";
 import "@vkontakte/vkui/dist/vkui.css";
 import { useState } from "react";
 import React from "react";
@@ -53,7 +53,12 @@ function AgeDefiner() {
 
   return (
     <div id="AgeDefinerBlock">
-      <form action="" onSubmit={handleSubmit}>
+      <div className="ageNum">
+        <Text weight="1" style={{fontSize: "60px"}}>{data?.age}</Text>
+      </div>
+      <Text className="centerText">Is Your age</Text>
+
+      <form action="" onSubmit={handleSubmit} className="ageDefinerForm">
         <Input
           onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
             setName(e.target.value);
@@ -65,11 +70,11 @@ function AgeDefiner() {
           placeholder="Name"
           pattern="[a-zA-Z]+"
           title="Please input only alphabetic letters"
+          
         />
-        <Button type="submit" size={"l"}>
+        <Button className="ageDefinerButton" type="submit" size={"l"}>
           Send
         </Button>
-        <p>Your age is: {data?.age}</p>
       </form>
     </div>
   );

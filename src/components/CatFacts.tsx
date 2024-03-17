@@ -27,7 +27,7 @@ function CatFacts() {
   return (
     <div className="CatTextBlock">
       <Textarea rows={8} value={data?.fact} />
-      <Button onClick={handleClick} size={"l"}>
+      <Button className="catFactsButton" onClick={handleClick} size={"l"}>
         Send
       </Button>
     </div>

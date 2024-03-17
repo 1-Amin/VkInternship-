@@ -1,34 +1,36 @@
-body{
-  margin: 0;
-  padding: 0;
 
-}
-.AgeDefinerInput{
-  width: 240px;
-}
-.AgeDefinerInput:invalid{
-  border: red solid 3px;
-}
-#AgeDefinerBlock{
-  display: flex;
-  flex-direction: row;
-}
-
-section{
-  display: flex;
-  flex-wrap: wrap;
-  height: 100vh;
-}
-
-.cat{
-  flex-grow: 1;
-  display: flex;
+.ageNum {
+  padding: 40px;
+  color: #2483e4;
   align-items: center;
-  justify-content: center;
+  text-align: center;
+  font-size: 60px;
 }
-.human{
-  display: flex;
-  flex-grow: 1;
+.ageDefinerForm{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 6px;
+margin-top: 20px;
+}
+.AgeDefinerInput {
+  width: 260px;
+
+}
+.ageDefinerButton{
+  width: 260px;
+}
+.centerText{
   align-items: center;
-  justify-content: center;
+  text-align: center;
+}
+
+.CatTextBlock{
+  display: flex;
+  flex-direction: column;
+}
+.catFactsButton {
+  margin-top: 10px;
+  
 }
